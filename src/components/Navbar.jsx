@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
-import './css/Navbar.css'
+import './css/Navbar.css';
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
-      <a className="navbar-brand" href="#">
+      <Link to="/" className="navbar-brand">
         <img src={logo} alt="" height="50" />
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -21,19 +23,19 @@ const Navbar = () => {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="#">Home</a>
+            <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
+            <Link to="/about" className="nav-link">About</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Products</a>
+            <Link to="/products" className="nav-link">Products</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Services</a>
+            <Link to="/services" className="nav-link">Services</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
+            <Link to="/contact" className="nav-link">Contact</Link>
           </li>
         </ul>
       </div>
