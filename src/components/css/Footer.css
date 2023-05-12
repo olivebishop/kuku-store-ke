@@ -1,0 +1,64 @@
+
+.footer {
+    background-color: black;
+    color: white;
+  }
+  
+  .footer-logo {
+    max-width: 30%;
+  }
+  
+  .app-store-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .social-icons a:hover {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  
+  .form-control {
+    flex-grow: 1;
+    border-radius: 0;
+  }
+  
+  .btn-primary {
+    border-radius: 0;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  @media (max-width: 576px) {
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+  
+    .row.align-items-center > div {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .row.address-row {
+      justify-content: flex-end;
+    }
+  }
+  
+  .text-md-right {
+    text-align: right;
+  }
+  
